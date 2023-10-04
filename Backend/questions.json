@@ -1,0 +1,332 @@
+[
+    {
+    "id": 1,
+    "question": "Tocar un instrumento y componer música",
+    "area": "Arte y Creatividad"
+    },
+    {
+    "id": 2,
+    "question": "Realizar excavaciones para descubrir restos del pasado.",
+    "area": "Ciencias Sociales"
+    },
+    {
+    "id": 3,
+    "question": "Seleccionar, capacitar y motivar al personal de una organización empresa",
+    "area": "Economía, Administración y Finanzas"
+    },
+    {
+    "id": 4,
+    "question": "Aplicaciones tecnológicas para uso del internet",
+    "area": "Ciencia y Tecnologia"
+    },
+    {
+    "id": 5,
+    "question": "Criar, cuidar y tratar animales domésticos y de campo .",
+    "area": "Ciencias de la Salud"
+    },
+    {
+     "id": 6,
+     "question": "Investigar sobre áreas verdes, medio ambiente y cambios climáticos",
+     "area": "git a"
+    },
+    {
+     "id": 7,
+     "question": " Desarrollar una plantación o administrar un vivero",
+     "area": "Ciencias Ecológicas y Ambientales"
+    },
+    {
+     "id": 8,
+     "question": "Administrar y renovar menús de comidas en un hotel o restaurante. ",
+     "area": "Ciencias de la Salud"
+    },
+    {
+     "id": 9,
+     "question": " Administrar y ordenar (planificar) adecuadamente la ocupación del espacio físico de ciudades, paises etc., utilizando imágenes de satélite, mapas ",
+     "area": "Ciencia y Tecnologia"
+    },
+    {
+     "id": 10,
+     "question": "Asesorar a inversionistas en la compra de bienes\/acciones en mercados nacionales e internacionales.",
+     "area": "Economía, Administración y Finanzas"
+    },
+    {
+     "id": 11,
+     "question": "Diseñar y ejecutar programas de turismo ",
+     "area": "Ciencias Sociales"
+    },
+    {
+     "id": 12,
+     "question": "Trabajar como presentador de televisión , locutor de radio y televisión, animador de programas culturales y concursos",
+     "area": "Arte y Creatividad"
+    },
+    {
+     "id": 13,
+     "question": "Diseñar logotipos y portadas de una revista.",
+     "area": "Arte y Creatividad"
+    },
+    {
+     "id": 14,
+     "question": "Defender a clientes individuales o empresas en juicios de diferente naturaleza",
+     "area": "Ciencias Sociales"
+    },
+    {
+     "id": 15,
+     "question": "Planificar cuáles son las metas de una organización pública o privada a mediano y largo plazo",
+     "area": "Economía, Administración y Finanzas"
+    },
+    {
+     "id": 16,
+     "question": "Resolver problemas de cálculo para construir un puente",
+     "area": "Ciencia y Tecnologia"
+    },
+    {
+     "id": 17,
+     "question": "Diseñar cursos para enseñar a la gente sobre temas de salud e higiene ",
+     "area": "Ciencias de la Salud"
+    },
+    {
+     "id": 18,
+     "question": "Hacer experimentos con plantas (frutas, árboles, flores).",
+     "area": "Ciencias Ecológicas y Ambientales"
+    },
+    {
+     "id": 19,
+     "question": "Saber sobre nichos y diferentes ecosistemas naturales. ",
+     "area": "Ciencias Ecológicas y Ambientales"
+    },
+    {
+     "id": 20,
+     "question": "Mejorar la imagen facial y corporal de las personas aplicando diferentes técnicas. ",
+     "area": "Ciencias de la Salud"
+    },
+    {
+     "id": 21,
+     "question": "Aplicar conocimientos de estadistica en investigaciones en diversas áreas (social, administrativa, salud, etcétera)",
+     "area": "Ciencia y Tecnologia"
+    },
+    {
+     "id": 22,
+     "question": "Administrar una empresa (familiar, privada o pública).",
+     "area": "Economía, Administración y Finanzas"
+    },
+    {
+     "id": 23,
+     "question": "Estudiar grupos étnicos, sus costumbres, tradiciones, cultura y compartir sus vivencias",
+     "area": "Ciencias Sociales"
+    },
+    {
+     "id": 24,
+     "question": "Producir cortometrajes, spots publicitarios, programas educativos, de ficción, etcétera.",
+     "area": "Arte y Creatividad"
+    },
+    {
+     "id": 25,
+     "question": "Pintar, hacer esculturas, ilustrar libros de arte, etcétera.",
+     "area": "Arte y Creatividad"
+    },
+    {
+     "id": 26,
+     "question": "Investigar las causas y efectos de los trastornos emocionales",
+     "area": "Ciencias Sociales"
+    },
+    {
+     "id": 27,
+     "question": "Controlar ingresos y egresos de fondos y presentar el balance final de una institución.",
+     "area": "Economía, Administración y Finanzas"
+    },
+    {
+     "id": 28,
+     "question": "Diseñar y planificar la producción masiva de articulos como muebles, autos, equipos de oficina, empaques y envases para alimentos y otros ",
+     "area": "Ciencia y Tecnologia"
+    },
+    {
+     "id": 29,
+     "question": "Atender la salud de personas enfermas.",
+     "area": "Ciencias de la Salud"
+    },
+    {
+     "id": 30,
+     "question": "Realizar el control de calidad de los alimentos.",
+     "area": "Ciencias Ecológicas y Ambientales"
+    },
+    {
+     "id": 31,
+     "question": "Reforestar un bosque.",
+     "area": "Ciencias Ecológicas y Ambientales"
+    },
+    {
+     "id": 32,
+     "question": "Planificar y recomendar dietas para personas diabéticas y\/o con sobrepeso.",
+     "area": "Ciencias de la Salud"
+    },
+    {
+     "id": 33,
+     "question": "Ejecutar proyectos de extracción minera y metalúrgica.",
+     "area": "Ciencia y Tecnologia"
+    },
+    {
+     "id": 34,
+     "question": "Crear estrategias de promoción y venta de nuevos productos ecuatorianos en el mercado internacional.",
+     "area": "Economía, Administración y Finanzas"
+    },
+    {
+     "id": 35,
+     "question": "Diseñar programas educativos para niños con discapacidad.",
+     "area": "Ciencias Sociales"
+    },
+    {
+     "id": 36,
+     "question": "Diseñar ropa para niños, jóvenes y adultos",
+     "area": "Arte y Creatividad"
+    },
+    {
+     "id": 37,
+     "question": "Prepararse para ser modelo profesional.",
+     "area": "Arte y Creatividad"
+    },
+    {
+     "id": 38,
+     "question": "Escribir articulos periodisticos, cuentos, novelas y otros",
+     "area": "Ciencias Sociales"
+    },
+    {
+     "id": 39,
+     "question": "Elaborar campañas para introducir un nuevo producto al mercado.",
+     "area": "Economía, Administración y Finanzas"
+    },
+    {
+     "id": 40,
+     "question": "Investigar y probar nuevos productos farmacéuticos ",
+     "area": "Ciencia y Tecnologia"
+    },
+    {
+     "id": 41,
+     "question": "Examinar y tratar los problemas visuales",
+     "area": "Ciencias de la Salud"
+    },
+    {
+     "id": 42,
+     "question": "Trabajar investigando la reproduccion de peces, camarones y otros animales marinos.",
+     "area": "Ciencias Ecológicas y Ambientales"
+    },
+    {
+     "id": 43,
+     "question": "Investigar sobre nuevos fertilizantes biológicos",
+     "area": "Ciencias Ecológicas y Ambientales"
+    },
+    {
+     "id": 44,
+     "question": "Atender la salud dental de las personas.",
+     "area": "Ciencias de la Salud"
+    },
+    {
+     "id": 45,
+     "question": "Tener un taller de reparación y mantenimiento de carros, tractores, etcétera ",
+     "area": "Ciencia y Tecnologia"
+    },
+    {
+     "id": 46,
+     "question": "Investigar y\/o sondear nuevos mercados.",
+     "area": "Economía, Administración y Finanzas"
+    },
+    {
+     "id": 47,
+     "question": "Tratar a niños, jóvenes y adultos con problemas psicológicos.",
+     "area": "Ciencias Sociales"
+    },
+    {
+     "id": 48,
+     "question": "Fotografiar hechos históricos, lugares significativos, rostros, paisajes para el área publicitaria, artistica, periodística y social.",
+     "area": "Arte y Creatividad"
+    },
+    {
+     "id": 49,
+     "question": "Diseñar juegos interactivos electrónicos para computadora.",
+     "area": "Arte y Creatividad"
+    },
+    {
+     "id": 50,
+     "question": "Estudiar la diversidad cultural en el ámbito rural y urbano.",
+     "area": "Ciencias Sociales"
+    },
+    {
+     "id": 51,
+     "question": "Aconsejar a las personas sobre planes de ahorro e inversiones",
+     "area": "Economía, Administración y Finanzas"
+    },
+    {
+     "id": 52,
+     "question": " Diseñar máquinas que puedan simular actividades humanas.",
+     "area": "Ciencia y Tecnologia"
+    },
+    {
+     "id": 53,
+     "question": "Atender y realizar ejercicios a personas que tienen limitaciones fisicas, problemas de lenguaje, etcétera.",
+     "area": "Ciencias de la Salud"
+    },
+    {
+     "id": 54,
+     "question": "Estudiar la influencia entre las Corrientes marinas y el clima y sus consecuencias ecológicas.",
+     "area": "Ciencias Ecológicas y Ambientales"
+    },
+    {
+     "id": 55,
+     "question": "Investigar sobre la conservación de los alimentos.",
+     "area": "Ciencias Ecológicas y Ambientales"
+    },
+    {
+     "id": 56,
+     "question": " Investigar organismos vivos para elaborar vacunas.",
+     "area": "Ciencias de la Salud"
+    },
+    {
+     "id": 57,
+     "question": "Manejar y\/o dar mantenimiento a dispositivos\/aparatos tecnológicos en aviones, barcos, radares, etcétera.",
+     "area": "Ciencia y Tecnologia"
+    },
+    {
+     "id": 58,
+     "question": "Administrar una empresa de turismo y\/o agencias de viaje.",
+     "area": "Economía, Administración y Finanzas"
+    },
+    {
+     "id": 59,
+     "question": "Estudiar idiomas extranjeros -actuales y antiguos-para hacer traducción. ",
+     "area": "Ciencias Sociales"
+    },
+    {
+     "id": 60,
+     "question": "Rediseñar y decorar espacios físicos en viviendas, oficinas y locales comerciales.",
+     "area": "Arte y Creatividad"
+    },
+    {
+     "id": 61,
+     "question": "Crear campañas publicitarias.",
+     "area": "Arte y Creatividad"
+    },
+    {
+     "id": 62,
+     "question": "Gestionar y evaluar convenios internacionales de cooperación para el desarrollo social.",
+     "area": "Ciencias Sociales"
+    },
+    {
+     "id": 63,
+     "question": "Organizar un plan de distribución y venta de un gran almacén",
+     "area": "Economía, Administración y Finanzas"
+    },
+    {
+     "id": 64,
+     "question": "Dedicarse a fabricar productos alimenticios de consumo masivo",
+     "area": "Ciencia y Tecnologia"
+    },
+    {
+     "id": 65,
+     "question": "Aplicar métodos alternativos a la medicina tradicional para atender personas con dolencias de diversa índole",
+     "area": "Ciencias de la Salud"
+    },
+    {
+     "id": 66,
+     "question": "Tener y cuidar su propio cultivo de hortalizas",
+     "area": "Ciencias Ecológicas y Ambientales"
+    }
+   ]

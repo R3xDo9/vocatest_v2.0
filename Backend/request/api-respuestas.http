@@ -1,0 +1,46 @@
+GET http://localhost:3000/respuestas
+####
+GET http://localhost:3000/respuestas/651dc5baf1c655361b3de4e9
+
+###
+POST http://localhost:3000/respuestas
+Content-Type: application/json
+
+{
+    "Arte y Creatividad": 2,
+    "Ciencias Sociales": 1,
+    "Economía, Administración y Finanzas": 3,
+    "Ciencia y Tecnologia": 2,
+    "Ciencias de la Salud": 8,
+    "Ciencias Ecológicas y Ambientales": 9
+}
+
+
+###
+POST http://localhost:3000/respuestas
+Content-Type: application/json
+
+{
+    "Arte y Creatividad": 5,
+    "Ciencias Sociales": 2,
+    "Economía, Administración y Finanzas": 7,
+    "Ciencia y Tecnologia": 6,
+    "Ciencias de la Salud": 0,
+    "Ciencias Ecológicas y Ambientales": 4
+}
+
+
+
+
+###
+PATCH http://localhost:3000/respuestas/651cc8b8b6382bbefefbf0c7
+Content-Type: application/json
+
+{
+    "Ciencias Sociales":4,
+    "Ciencias Ecológicas y Ambientales": 6
+}
+
+
+####
+DELETE http://localhost:3000/respuestas/6514487ae26c2b1a7ce0398b

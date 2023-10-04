@@ -1,0 +1,16 @@
+GET http://localhost:3000/questions
+
+####
+GET http://localhost:3000/questions/1
+
+
+####
+GET http://localhost:3000/questions/?area=ciencia%20y%20tecnologia
+
+
+####
+GET http://localhost:3000/questions/?area=ciencia
+
+
+###
+GET http://localhost:3000/questions/?area=salud
