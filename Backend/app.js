@@ -1,6 +1,7 @@
 import express, {json} from 'express'
 import { questionsRouter } from './routes/questions.js'
 import { answersRouter } from './routes/answers.js'
+import { programasRouter } from './routes/programas.js'
 import { corsMiddleware } from './middlewares/cors.js'
 import './database.js'
 
@@ -14,6 +15,7 @@ app.get('/', (req, res) => {
 
 app.use('/questions', questionsRouter)
 app.use('/respuestas', answersRouter)
+app.use('/programas', programasRouter)
 
 // Inicializar el servidor
 const PORT = process.env.PORT ?? 3000

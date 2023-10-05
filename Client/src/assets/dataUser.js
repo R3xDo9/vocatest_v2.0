@@ -1,6 +1,6 @@
 export const dataUser=[
     {
-        id:1, imgUrl:"src/assets/user1.jpg", nombre:"Danna Valeria Romero Rintá." , data:'Hola1'
+        id:1, imgUrl:"src/assets/user1.jpg", nombre:"Danna Valeria Romero Rintá." , data:':o'
     },
     {
         id:2, imgUrl:"src/assets/user2.jpg", nombre:"Angie Viviana Alfonso Medellín" , data:'Hola1'

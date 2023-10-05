@@ -8,7 +8,7 @@ const Header =()=>{
   return (
     <div className='header'>
     <nav>
-        <a href="index.html"><img src="src/assets/logo1.png" alt="" /></a>
+        <Link to='/'><img src="src/assets/logoVocaTest.png" alt="" /></Link>
         <div className="nav-links" id="navLinks">
           <ul>
             <li><a href="">INICIO</a></li>
@@ -94,14 +94,14 @@ const Servicios=()=>{
         <div className="campus-col">
           <img src="src/assets/newyork.png" alt="" />
           <div className="layer">
-            <h3>Directorio</h3>
+            <Link to='/programas-data' ><h3>Directorio</h3></Link>
           </div>
         </div>
 
         <div className="campus-col">
           <img src="src/assets/washington.png" alt="" />
           <div className="layer">
-            <h3>Testimonios</h3>
+            <Link to='/respuestas-data'><h3>Datos</h3></Link>
           </div>
         </div>
       </div>

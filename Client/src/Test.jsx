@@ -31,9 +31,9 @@ const Test = () => {
   const navigate = useNavigate();
   const { data, loading, error } = useFetch('http://localhost:3000/questions');
   const [selectedAnswers, setSelectedAnswers] = useState({});
-  const [areaCounts, setAreaCounts] = useState(initialAreaCounts);
   const [allQuestionsAnswered, setAllQuestionsAnswered] = useState(false);
   
+  const [areaCounts, setAreaCounts] = useState(initialAreaCounts);
   useEffect(() => {
     const allAnswered = data?.every((question) => selectedAnswers[question.id] !== undefined);
     setAllQuestionsAnswered(allAnswered);
