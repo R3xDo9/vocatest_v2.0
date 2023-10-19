@@ -1,26 +1,11 @@
 .results-page{
-    height: 300px;
-}
-.result-data{
-    display: flex;
-    flex-direction: column;
+    height: 400px;
+    margin: 20px;
+    padding: 12px;
 }
 
-.pagination{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid black;
-}
 
-.pagination a{
-    margin-left: 10px;
-    cursor: pointer;
-    border-left: 2px solid black ;
-
-}
-
-.results-page h2{
+.results-page h2,h1{
     text-align: center;
 }
 .results-page p{
@@ -28,7 +13,7 @@
 }
 .top-areas{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
 }
 

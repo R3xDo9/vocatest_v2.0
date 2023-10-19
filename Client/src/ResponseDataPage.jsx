@@ -1,10 +1,12 @@
 import { useState } from 'react';
 import ReactPaginate from 'react-paginate';
 import { useFetch } from './useFetch';
+import {useNavigate} from 'react-router-dom'
 
-import './ResultsPage.css';
+import './ResponseDataPage.css';
 
 const ResponseDataPage = () => {
+  const navigate = useNavigate();
   const { data, loading, error } = useFetch('http://localhost:3000/respuestas');
   const [currentPage, setCurrentPage] = useState(0);
   const [perPage] = useState(5); // Número de resultados por página
@@ -20,10 +22,11 @@ const ResponseDataPage = () => {
   const currentResults = data ? data.slice(indexOfFirstResult, indexOfLastResult) : [];
 
   return (
-    <div>
+    <div className='results'>
       <h2>Respuestas</h2>
       {error && <div className="error"><h2>X..Error:{error}..X</h2></div>}
       {loading && <div className="question-header"><h2>Loading...</h2></div>}
+      <div className="tableResults-container">
       <table>
         <thead>
           <tr>
@@ -40,12 +43,14 @@ const ResponseDataPage = () => {
         </thead>
         <tbody>
           {currentResults.map((response) => (
-            <tr key={response._id}>
+            <tr key={response._id} onClick={()=>{
+              navigate(`/results/${response._id}`);
+            }}>
               <td>{response._id}</td>
               <td>{response['Arte y Creatividad']}</td>
               <td>{response['Ciencias Sociales']}</td>
               <td>{response['Economía, Administración y Finanzas']}</td>
-              <td>{response['Ciencia y Tecnología']}</td>
+              <td>{response['Ciencia y Tecnologia']}</td>
               <td>{response['Ciencias de la Salud']}</td>
               <td>{response['Ciencias Ecológicas y Ambientales']}</td>
               <td>{response['date']}</td>
@@ -54,14 +59,17 @@ const ResponseDataPage = () => {
           ))}
         </tbody>
       </table>
-      {data && data.length > perPage && (
-        <ReactPaginate
-          pageCount={Math.ceil(data.length / perPage)}
-          onPageChange={handlePageChange}
-          containerClassName={'pagination'}
-          activeClassName={'active'}
-        />
-      )}
+      </div>
+      <div className="pagination">
+        {data && data.length > perPage && (
+          <ReactPaginate
+            pageCount={Math.ceil(data.length / perPage)}
+            onPageChange={handlePageChange}
+            containerClassName={'pagination'}
+            activeClassName={'active'}
+          />
+        )}
+      </div>
     </div>
   );
 };

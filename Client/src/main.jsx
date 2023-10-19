@@ -4,7 +4,7 @@ import './index.css'
 import ResultsPage from './ResultsPage';
 import AppTest from './Test';
 import ResponseDataPage from './ResponseDataPage.jsx';
-import ProgramasU from './ProgramasU.jsx';
+import Directory from './Directory.jsx';
 import { Route, Routes,  BrowserRouter} from 'react-router-dom'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -14,7 +14,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path='/test' element={<AppTest/>}/>
         <Route path='/respuestas-data' element={<ResponseDataPage/>} />
         <Route path='/results/:id' element={<ResultsPage/>}/>
-        <Route path='/programas-data' element={<ProgramasU/>}/>
+        <Route path='/programas-data' element={<Directory/>}/>
       </Routes>
   </BrowserRouter>,
 )

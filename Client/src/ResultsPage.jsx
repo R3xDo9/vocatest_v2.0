@@ -2,6 +2,7 @@ import { useParams } from 'react-router-dom';
 import { useFetch } from './useFetch';
 
 import './ResultsPage.css';
+import ProgramasU from './ProgramasU';
 
 const ResultsPage = () => {
   const { id } = useParams(); // Obtener el parámetro de la URL
@@ -28,7 +29,7 @@ const ResultsPage = () => {
   // Renderizar los resultados cuando estén disponibles
   return (
     <div className="results-page">
-      <h2>Resultados del Test</h2>
+      <h1>Resultados del Test</h1>
       {data ? (
         <div>
           <p>Arte y Creatividad: {data['Arte y Creatividad']}</p>
@@ -38,17 +39,23 @@ const ResultsPage = () => {
           <p>Ciencias de la Salud: {data['Ciencias de la Salud']}</p>
           <p>Ciencias Ecológicas y Ambientales: {data['Ciencias Ecológicas y Ambientales']}</p>
           <p>Fecha: {data.date}</p>
-          <h3>Las dos áreas con mayor puntaje:</h3>
           <div className='top-areas'>
           {topTwoAreas.map(([area, score]) => (
               <div key={area}>
-                <p>{area}: {score}</p>
+                <h2>{area}: {score}</h2>
+                
+                <ProgramasU area={
+                    area=='Arte y Creatividad'?'Bellas%20Artes':
+                    area=='Ciencias Sociales'?'Ciencias%20sociales%20y%20humanas':
+                    area=='Economía, Administración y Finanzas'?'Economía,%20administración,%20contaduría%20y%20afines':
+                    area=='Ciencia y Tecnologia'?'Matemáticas%20y%20ciencias%20naturales':
+                    area=='Ciencias de la Salud'?'Ciencias%20de%20la%20salud':
+                    area=='Ciencias Ecológicas y Ambientales'?'Agronomía,%20veterinaria%20y%20afines':
+                    ''
+                    }/>
               </div>
             ))}
           </div>
-            
-  
-          {/* Puedes agregar más campos aquí según sea necesario */}
         </div>
       ) : (
         <p>Cargando resultados...</p>
@@ -56,5 +63,13 @@ const ResultsPage = () => {
     </div>
   );
 }
-
 export default ResultsPage;
+// Economía, administración, contaduría y afines: 7783 programas
+// Ciencias sociales y humanas: 4032 programas
+// Ingeniería, arquitectura, urbanismo y afines: 6060 programas
+// Bellas artes: 1187 programas
+// Matemáticas y ciencias naturales: 710 programas
+// Agronomía, veterinaria y afines: 693 programas
+// Ciencias de la salud: 2069 programas
+// Ciencias de la educación: 3103 programas
+// Sin clasificar: 2519 programas
