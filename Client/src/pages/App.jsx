@@ -1,7 +1,7 @@
-import './App.css'
+import '../css/App.css'
 // eslint-disable-next-line no-unused-vars
 import { Route, Routes, Link, useParams, Outlet} from 'react-router-dom'
-import { dataUser } from './assets/dataUser'
+import { dataUser } from '../assets/dataUser'
 // eslint-disable-next-line no-unused-vars
 
 const Header =()=>{

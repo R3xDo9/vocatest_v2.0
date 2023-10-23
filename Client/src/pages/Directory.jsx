@@ -1,4 +1,4 @@
-import './Directory.css';
+import '../css/Directory.css';
 import ProgramasU from './ProgramasU';
 
 const Directory=()=>{
