@@ -23,7 +23,7 @@ const ResponseDataPage = () => {
 
   return (
     <div className='results'>
-      <h2>Respuestas</h2>
+      <h1>Respuestas</h1>
       {error && <div className="error"><h2>X..Error:{error}..X</h2></div>}
       {loading && <div className="question-header"><h2>Loading...</h2></div>}
       <div className="tableResults-container">

@@ -5,18 +5,12 @@ import { useState, useEffect } from 'react';
 import { Route, Routes, useNavigate} from 'react-router-dom'
 
 const initialAreaCounts = {
-  // "Arte y Creatividad": 0,
-  // "Ciencias Sociales": 0,
-  // "Economía, Administración y Finanzas": 0,
-  // "Ciencia y Tecnologia": 0,
-  // "Ciencias de la Salud": 0,
-  // "Ciencias Ecológicas y Ambientales": 0
-  "Arte y Creatividad": 4,
-  "Ciencias Sociales": 5,
-  "Economía, Administración y Finanzas": 7,
-  "Ciencia y Tecnologia": 4,
-  "Ciencias de la Salud": 2,
-  "Ciencias Ecológicas y Ambientales": 4
+  "Arte y Creatividad": 0,
+  "Ciencias Sociales": 0,
+  "Economía, Administración y Finanzas": 0,
+  "Ciencia y Tecnologia": 0,
+  "Ciencias de la Salud": 0,
+  "Ciencias Ecológicas y Ambientales": 0
 };
 
 const HeaderTest=()=>{
@@ -84,11 +78,6 @@ const Test = () => {
     }
   };
 
-  //Desarrollador
-  const sumbitAll =()=>{
-    postAnswers()
-  }
-
   return (
     <div className='bodyTest'>
       <HeaderTest/>
@@ -138,10 +127,6 @@ const Test = () => {
         ))}
         <button onClick={handleSaveAnswers} disabled={!allQuestionsAnswered} className={`updateAnswers ${allQuestionsAnswered ? "enabled" : ""}`}>
             Subir Respuestas
-        </button>
-
-        <button onClick={sumbitAll} className={`updateAnswers enabled`}>
-            Subir Respuestas Rapido (Desarrollador)
         </button>
       </div>
     </div>

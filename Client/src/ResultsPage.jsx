@@ -38,12 +38,12 @@ const ResultsPage = () => {
           <p>Ciencia y Tecnología: {data['Ciencia y Tecnologia']}</p>
           <p>Ciencias de la Salud: {data['Ciencias de la Salud']}</p>
           <p>Ciencias Ecológicas y Ambientales: {data['Ciencias Ecológicas y Ambientales']}</p>
-          <p>Fecha: {data.date}</p>
           <div className='top-areas'>
+            <h2>Hora de ver las dos areas que mas se acojen a ti</h2>
+            <hr />
           {topTwoAreas.map(([area, score]) => (
               <div key={area}>
-                <h2>{area}: {score}</h2>
-                
+                <h3>{area}: {score}</h3>
                 <ProgramasU area={
                     area=='Arte y Creatividad'?'Bellas%20Artes':
                     area=='Ciencias Sociales'?'Ciencias%20sociales%20y%20humanas':

@@ -11,7 +11,7 @@ const Header =()=>{
         <Link to='/'><img src="src/assets/logoVocaTest.png" alt="" /></Link>
         <div className="nav-links" id="navLinks">
           <ul>
-            <li><a href="">INICIO</a></li>
+            <li><a href="#facilities">INICIO</a></li>
             <li><a href="">SERVICIOS</a></li>
             <li><a href="">NOSOTROS</a></li>
           </ul>
@@ -23,7 +23,6 @@ const Header =()=>{
           &quot;Disfruta la vida conociendo tu vocación&quot;<br />
            Página de orientación Vocacional.
         </h3>
-        <a href="" className="hero-btn">Visítenos para saber más</a>
       </div>
       <div className="wave wave1"></div>
       <div className="wave wave2"></div>
