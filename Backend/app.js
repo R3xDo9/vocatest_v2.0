@@ -10,12 +10,12 @@ app.use(json())
 app.disable('x-powered-by')
 app.use(corsMiddleware())
 app.get('/', (req, res) => {
-  res.send('<h1>Hola mundo!!</h1>')
+  res.send('<h1>API VOCATEST!!</h1>')
 })
 
 app.use('/questions', questionsRouter)
-app.use('/respuestas', answersRouter)
 app.use('/programas', programasRouter)
+app.use('/respuestas', answersRouter)
 
 // Inicializar el servidor
 const PORT = process.env.PORT ?? 3000

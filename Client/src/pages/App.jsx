@@ -1,27 +1,77 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable no-undef */
 import '../css/App.css'
 // eslint-disable-next-line no-unused-vars
 import { Route, Routes, Link, useParams, Outlet} from 'react-router-dom'
 import { dataUser } from '../assets/dataUser'
+import React from 'react'
+import { useRef } from 'react'
 // eslint-disable-next-line no-unused-vars
 
-const Header =()=>{
+
+
+const Home = () => {
+  const coursesRef = useRef(null);
+  const serviciosRef = useRef(null);
+  const facilitiesRef = useRef(null);
+  const testimoniosRef = useRef(null);
+
+  const scrollToRef = (ref) => {
+    if (ref && ref.current) {
+      ref.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  return (
+    <>
+      <Header
+        coursesRef={coursesRef}
+        serviciosRef={serviciosRef}
+        facilitiesRef={facilitiesRef}
+        testimoniosRef={testimoniosRef}
+        scrollToRef={scrollToRef}
+      />
+      <Courses ref={coursesRef} />
+      <Servicios ref={serviciosRef} />
+      <Facilities ref={facilitiesRef} />
+      <Testimonios ref={testimoniosRef} />
+    </>
+  );
+};
+
+const Header = ({
+  coursesRef,
+  serviciosRef,
+  facilitiesRef,
+  testimoniosRef,
+  scrollToRef,
+}) => {
   return (
     <div className='header'>
-    <nav>
-        <Link to='/'><img src="src/assets/logoVocaTest.png" alt="" /></Link>
+      <nav>
+      <Link to='/'><img src="src/assets/logoVocaTest.png" alt="" /></Link>
         <div className="nav-links" id="navLinks">
-          <ul>
-            <li><a href="#facilities">INICIO</a></li>
-            <li><a href="">SERVICIOS</a></li>
-            <li><a href="">NOSOTROS</a></li>
-          </ul>
+        <ul>
+          <li>
+            <a onClick={() => scrollToRef(coursesRef)}>INICIO</a>
+          </li>
+          <li>
+            <a onClick={() => scrollToRef(serviciosRef)}>SERVICIOS</a>
+          </li>
+          <li>
+            <a onClick={() => scrollToRef(facilitiesRef)}>BENEFICIOS</a>
+          </li>
+          <li>
+            <a onClick={() => scrollToRef(testimoniosRef)}>NOSOTROS</a>
+          </li>
+        </ul>
         </div>
       </nav>
       <div className="text-box hidden">
         <h1>¿Quieres cambiar tu futuro?</h1>
           <h3>
           &quot;Disfruta la vida conociendo tu vocación&quot;<br />
-           Página de orientación Vocacional.
+           Página de Orientación Vocacional.
         </h3>
       </div>
       <div className="wave wave1"></div>
@@ -29,56 +79,45 @@ const Header =()=>{
       <div className="wave wave3"></div>
       <div className="wave wave4"></div>
     </div>
-      )
-}
+  );
+};
 
-const Courses =()=>{
+const Courses = React.forwardRef((props, ref) => {
   return (
-    <section className="course">
-      <h1>¿Qué es educación vocacional?</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-
+    <section className="course" ref={ref}>
+      <h1>¿Qué es orientación vocacional?</h1>
       <div className="row">
         <div className="course-col hidden">
-          <h3>Lorem 1</h3>
+          <h3></h3>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Voluptatibus earum laudantium aut ipsa, hic nostrum quas aliquam
-            nihil ex, sunt illum dolore rerum nisi, excepturi impedit unde
-            nesciunt repudiandae voluptas?
+          La orientación vocacional es un proceso de autodescubrimiento y exploración que guía a las personas hacia la elección de una carrera que se alinee con sus pasiones, habilidades y valores, permitiéndoles encontrar satisfacción y éxito en su vida profesional.
           </p>
         </div>
 
         <div className="course-col hidden">
-          <h3>Lorem 2</h3>
+          <h3></h3>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Voluptatibus earum laudantium aut ipsa, hic nostrum quas aliquam
-            nihil ex, sunt illum dolore rerum nisi, excepturi impedit unde
-            nesciunt repudiandae voluptas?
+          Es un camino de acompañamiento personalizado que ayuda a los individuos a comprender sus fortalezas, debilidades e intereses, brindándoles las herramientas necesarias para tomar decisiones informadas sobre su futuro laboral, fomentando así el desarrollo de una carrera significativa y gratificante.
           </p>
         </div>
 
         <div className="course-col hidden">
-          <h3>Lorem 3</h3>
+          <h3></h3>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Voluptatibus earum laudantium aut ipsa, hic nostrum quas aliquam
-            nihil ex, sunt illum dolore rerum nisi, excepturi impedit unde
-            nesciunt repudiandae voluptas?
+          Es un proceso enriquecedor que se enfoca en el autoconocimiento y la exploración de opciones profesionales, permitiendo a las personas identificar y aprovechar su potencial único, para tomar decisiones conscientes y comprometerse con una trayectoria laboral que les brinde realización personal y contribución a la sociedad.
           </p>
         </div>
       </div>
     </section>
+  );
+});
+Courses.displayName = 'Courses'; 
 
-  )
-}
-
-const Servicios=()=>{
+const Servicios= React.forwardRef((props, ref) => {
   return (
-    <div className="campus">
+    <div ref={ref} className="campus">
       <h1>Servicios</h1>
-      Has uso de los siguientes servicios...
+      Haz uso de los siguientes servicios
 
       <div className="row">
         <div className="campus-col">
@@ -106,20 +145,21 @@ const Servicios=()=>{
       </div>
     </div>
   )
-}
+})
+Servicios.displayName = 'Servicios'; 
 
-const Facilities=()=>{
+const Facilities=React.forwardRef((props, ref) => {
   return (
-    <div className="facilities">
-      <h1>Beneficios.</h1>
-      <p>Beneficios de conocer tu vocación.</p>
+    <div ref={ref} className="facilities">
+      <h1>Beneficios</h1>
+      Beneficios de conocer tu vocación
       <div className="row">
         <div className="facilities-col">
           <img src="src/assets/library.png" alt="" />
           <div className="layer-fac">
             <h3>Satisfacción personal.</h3>
             <p>
-              te involucrarás en actividades que
+              Te involucrarás en actividades que
                realmente te gustan y te apasionan, lo que te
                brindará una mayor satisfacción en tu vida diaria.
             </p>
@@ -131,7 +171,7 @@ const Facilities=()=>{
           <div className="layer-fac">
             <h3>Motivación y compromiso.</h3>
             <p>
-              Al trabajar en algo que te apasiona, tendrás una mayor motivación intrínseca
+              Al trabajar en algo que te apasiona, tendrás una mayor motivación interna
               y estarás más comprometido con tu trabajo, lo
               que puede llevar a un mejor desempeño y resultados.
             </p>
@@ -151,14 +191,14 @@ const Facilities=()=>{
       </div>
     </div>
   )
-}
+})
+Facilities.displayName = 'Facilities'; 
 
-const Testimonios=()=>{
+const Testimonios=React.forwardRef((props, ref) => {
   return (
-    <div className="testimonios">
-      <h1>Lorem ipsum dolor sit amet.</h1>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum.</p>
-
+    <div ref={ref} className="testimonios">
+      <h1>Desarrolladores</h1>
+      
       <div className="row">
         {
           dataUser.map((item)=>{
@@ -176,43 +216,8 @@ const Testimonios=()=>{
       </div>
     </div>
   )
-}
-
-const Footer=()=>{
-  return (
-    <div className="footer">
-      <h4>Acerca de nosotros</h4>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate, adipisci amet voluptatem voluptatibus delectus <br/> recusandae non deserunt animi culpa eos placeat odio at dicta, facere quaerat ipsa, veritatis voluptatum? In!</p>
-   
-      <p>Made With <i className="fa fa-heart"></i> por UwU</p>
-
-    </div>
-  )
-}
-
-const ContactUs=()=>{
-  return(
-    <div className="cta">
-       <h1>Lorem ipsum dolor sit amet <br/> consectetur adipisicing.</h1>
-      <a href="" className="hero-btn">CONTACT US</a>
-    </div>
-  )
-}
-
-const Home=()=>{
-  return (
-    <>
-      <Header/>
-      <Courses/>
-      {/* <Slider/> */}
-      <Servicios/>
-      <Facilities/>
-      <Testimonios/>
-      <ContactUs/>
-      <Footer/>
-    </>
-  )
-}
+})
+Testimonios.displayName = 'Testimonios'; 
 
 function App() {
   return (
